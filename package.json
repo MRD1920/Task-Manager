@@ -1,29 +1,69 @@
 {
   
   "name": "task-manager",
+  
   "version": "1.0.0",
+  
   "main": "app.js",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "app":"nodemon app.js"
+  
+    
+  "test": "echo \"Error: no test specified\" && exit 1",
+  
+    
+  "app": "nodemon app.js"
+  
   },
+  
   "dependencies": {
-    "bootstrap": "^5.2.3",
-    "express": "^4.18.2",
-    "node": "^19.4.0"
+  
+    
+  "bootstrap": "^5.2.3",
+  
+    
+  "dotenv": "^16.0.3",
+  
+    
+  "express": "^4.18.2",
+  
+    
+  "mongoose": "^6.8.4",
+  
+    
+  "node": "^19.4.0"
+  
   },
+  
   "devDependencies": {
-    "nodemon": "^2.0.20"
+  
+    
+  "nodemon": "^2.0.20"
+  
   },
+  
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MRD1920/Task-Manager.git"
+  
+    
+  "type": "git",
+  
+    
+  "url": "git+https://github.com/MRD1920/Task-Manager.git"
+  
   },
+  
   "author": "Mriganka",
+  
   "license": "ISC",
+  
   "bugs": {
-    "url": "https://github.com/MRD1920/Task-Manager/issues"
+  
+    
+  "url": "https://github.com/MRD1920/Task-Manager/issues"
+  
   },
+  
   "homepage": "https://github.com/MRD1920/Task-Manager#readme",
+  
   "description": ""
 }
