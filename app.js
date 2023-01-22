@@ -1,7 +1,7 @@
 const express = require('express');
 const tasks = require('./Routes/tasks.js')
 const app = express();
-const port = 5000;
+const port = 3000;
 const connectDB = require('./db/connection')
 require('dotenv').config()
 
@@ -13,9 +13,13 @@ require('dotenv').config()
 // app.patch('api/v1/tasks/:id')     ---> update task
 // app.delete('api/v1/tasks/:id)     ---> delete task
 
+//middlewares
+app.use(express.static('./frontend'))
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
 
+
+//Routes
 app.get('/', (req,res) => {
     res.status(200).send('Hello my name is Mriganka Dhar');
 });
@@ -26,6 +30,7 @@ const start = async ()=>{
     try {
         //if connection to the db is success then we start listening
         await connectDB(process.env.MONGO_URI);
+        console.log('Connction to database is successful')
         app.listen(port,console.log(`The app is listening on port ${port}....`));  
         
     } catch (error) {
